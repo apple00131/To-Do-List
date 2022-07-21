@@ -1,0 +1,143 @@
+/* ------------------- css reset ------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------------------ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body{
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: linear-gradient(180deg, rgb(240, 237, 234) 60%, rgb(214, 208, 199) 90%);
+}
+
+.container{
+    width: 450px;
+    max-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    overflow-y: auto;
+    position: relative;
+    margin: auto;
+    top: calc((100vh - 400px)/2);
+}
+
+/* 標題 */
+.title{
+    margin: 10px;
+
+}
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+
+/* input 輸入匡 */
+#input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+#input::placeholder{
+    color: #bbb;
+}
+#input:focus{
+    border: rgb(214, 208, 199) solid 2px;
+}
+
+/* li 輸入內容 */
+ul li{
+    background: #fff;
+    color: #333;
+    /* background: #eee; */
+    border-bottom: #eee solid 1px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+ul .fa-check{
+    color: rgb(53, 182, 122);
+    right: 40px;
+}
+ul .fa-trash{
+    color: rgb(196, 68, 68);
+    right: 15px;
+}
+
+li.checked{
+    text-decoration: line-through 1px #333;
+    background: #eee;
+    transition: .2s;
+}
