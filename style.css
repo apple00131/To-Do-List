@@ -63,7 +63,7 @@ body{
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    background: linear-gradient(180deg, rgb(240, 237, 234) 60%, rgb(214, 208, 199) 90%);
+    background: linear-gradient(200deg, rgb(255, 171, 156) 50%, rgb(255, 255, 255) 50%);
 }
 
 .container{
